@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Meesterproef - Individueel Procesboek</title>
+  <base href="./">
+  <meta id="root-path" root-path="./">
+
+  <link rel="icon" sizes="96x96" href="https://publish-01.obsidian.md/access/f786db9fac45774fa4f0d8112e232d67/favicon-96x96.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+  <meta charset="UTF-8">
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+
+  <link rel="stylesheet" href="lib/styles/obsidian-styles.css">
+  <link rel="stylesheet" href="lib/styles/theme.css">
+  <link rel="stylesheet" href="lib/styles/plugin-styles.css">
+  <link rel="stylesheet" href="lib/styles/snippets.css">
+  <style> </style>
+
+
+  <!-- Graph View Data -->
+  <script>
+    let nodes = {
+      "nodeCount": 185,
+      "linkCount": 54,
+      "radii": [7, 7, 7, 7, 6.888888888888889, 6.888888888888889, 6.888888888888889, 6.4375, 6.4375, 6.4375, 6.4375, 6.4375, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 4.493055555555555, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3],
+      "labels": ["02-02-2023", "Minor Web Design & Development", "Web App from Scratch", "Opdracht Visitekaartje", "06-02-2023", "01-02-2023", "CSS to the Rescue - Kennismakingsopdracht", "28-01-2023", "13-02-2023", "Februari", "Zalando Cadeaubon gebruiken", "Eindopdracht Web App from Scratch", "29-01-2023", "03-02-2023", "Week 7", "Week 5", "CSS Color-Mix() - Chrome Developers", "Gewoontes", "Opgeven is geen Optie", "Thought Garden", "Belasting bellen voor naheffingsaanslag", "CSS Psuedo Selectoren", "Web App from Scratch - Kickoff", "PDCA Plan-Do-Check-Act Cycle", "Breakdown Schets", "Kamer Opruimen", "31-01-2023", "14-02-2023", "09-02-2023", "07-02-2023", "08-02-2023", "Building a Second Brain", "Weekly Nerd - Scaffolding met Vite", "Portfolio Project", "Planning Antwerpen", "Handige Tools", "AI Videomaker - Detail.co", "Export Readwise Highlights to Obsidian", "Capturing", "Eigen gemaakte bami", "Leningen", "Cadeau zoeken voor Mama", "TechToucan", "ChatGPT-generated summarization of TechToucan Branding Strategy", "Droom over Spongebob App", "Dynamic CSS Secrets", "CSS To the Rescue", "CSS to the Rescue - Eindopdracht", "Serverless Functions", "Tekenopdracht kick-off", "Refactor - Design Code Logics", "LyrIQ", "Event Loop", "28-06-2023", "30-03-2023", "30-01-2023", "25-04-2023", "28-03-2023", "28-02-2023", "26-04-2023", "24-02-2023", "27-06-2023", "26-06-2023", "25-06-2023", "22-03-2023", "22-02-2023", "24-06-2023", "14-03-2023", "19-06-2023", "21-02-2023", "16-02-2023", "20-02-2023", "09-03-2023", "15-03-2023", "11-05-2023", "12-02-2023", "11-02-2023", "08-05-2023", "10-02-2023", "06-06-2023", "07-06-2023", "01-03-2023", "05-04-2023", "05-02-2023", "04-02-2023", "Weekly Nerd - Project FUGU", "Weekly Nerd - Modal Mischief & Dialog Dilemmas", "Weekly Nerd - Adapting to Reality", "Weekly Nerd - 3D & Three.JS", "Untitled", "Untitled 1", "Realtime Web - Introductie", "Real-Time Web - Eindopdracht", "Real-Time Web - Data-Driven Development", "Digital Gardening in Obsidian", "Rust – What Made It “Click” for Me", "Pseudo-Classes", "Opleiding Stoppen  Nederlands", "One Reply to “Deep Dive Into the CSS Where() and Is() Functions”", "Manage Accessible Design System Themes With CSS Color-Contrast() — Smashing Magazine", "Day 92 Relative Color Syntax", "A Deep Dive Into CSS Specificity", "Day 92 Relative Color Syntax - Manuel Matuzović", "Day 11 Space-Separated Functional Color Notations", "Day 11 Space-Separated Functional Color Notations - Manuel Matuzović", "Creating an Effective Case Study 12 Important Tips to Remember", "CSS Color-Mix", "A Guide to Modern CSS Colors With RGB, HSL, HWB, LAB and LCH", "QuestMate", "Prompt Engineering", "Introductie", "Eigen Website", "Inspiration", "Portfolio", "2023 - Mannen met Plannen in Review", "Habits Template", "ChatGPT Conversation about Fitness Goals", "Live Server", "Weekly Nerd", "De Idee", "PWA - Service Workers Presentatie", "Nxt Museum Verslag", "Notulen Gesprek met Klant 16-6-2023", "Meesterproef presentatie door Robert", "Meesterproef Gezamenlijk Procesboek", "Meesterproef - Individueel Procesboek", "Local A.I.", "LLaMa Prompt Engineering", "HvA SelfSessies - 1", "Human-Centered Design - Week 2", "Human-Centered Design - Exclusive Design", "Human-Centered Design - Eindopdracht", "Human-Centered Design - Eindopdracht v2", "Human Centered Design - Wo 26 Apr", "Human Centered Design - Introductie", "Evenementen", "CSS Pre-Day", "Retro Card", "Athletic Greens", "Rianne naar Crisiscentrum brengen", "Broodje gekregen van Danian", "Zoom to Breathing in video editing", "Hyper Edit TikTok Videos", "Formatting Tips for Obsidian Notes", "Building a Second Brain Anekdote", "12 favoriete problemen", "Verknipt Easter - 8 April", "Melissa Ziekte", "Mevrouw met de Honden", "DALL-E Generations", "ChatGPT", "A.I. Video Editing", "A.I. Voice Cloning", "Rubik's Kubus Oplossen", "Verknipt Indoor Taets - 4 februari", "Omne Trium Perfectum", "Sem Bezoeken Madrid", "Service Workers", "PWA Eindopdracht", "Everyone has JavaScript, right?", "Is Progressive Enhancement Dead Yet?", "The Unreasonable Effectiveness of simple HTML", "Eindopdracht Browser Technologies", "Opdracht 1", "Kabeldiertjes", "Gastcollege Killian", "State Management zonder Javascript", "kennismakingsopdracht - presentatie", "The Dialog Element", "CSS to the Rescue - Interactie", "CSS To the Rescue - Presentaties", "CSS Native Nesting", "CSS To the Rescue - Briefing Week 1", "CSS Slider Stylen", "CSS 3D", "CSS Color Module Level 5", "Box Shadow Pixel Art", "WebAppfromScratch Week 4", "View Transitions API", "JS Documentation", "Visitekaartjes Schetsen", "Front-end projecten presenteren", "Nerd Sessie", "Opdracht squadpagina", "Hello API- UI-Stack"],
+      "paths": ["daily/02-02-2023.html", "projects/minor-web-design-&-development/minor-web-design-&-development.html", "archive/minor-web-design-&-development/web-app-from-scratch/web-app-from-scratch.html", "archive/minor-web-design-&-development/web-app-from-scratch/opdracht-visitekaartje.html", "daily/06-02-2023.html", "daily/01-02-2023.html", "archive/minor-web-design-&-development/css-to-the-rescue/css-to-the-rescue-kennismakingsopdracht.html", "daily/28-01-2023.html", "daily/13-02-2023.html", "monthly/februari.html", "areas/kleding/zalando-cadeaubon-gebruiken.html", "archive/minor-web-design-&-development/web-app-from-scratch/eindopdracht-web-app-from-scratch.html", "daily/29-01-2023.html", "daily/03-02-2023.html", "weekly/week-7.html", "weekly/week-5.html", "readwise-highlights/css-color-mix()-chrome-developers.html", "projects/fitness/gewoontes.html", "projects/opgeven-is-geen-optie/opgeven-is-geen-optie.html", "areas/note-taking/thought-garden.html", "areas/financiën/belasting-bellen-voor-naheffingsaanslag.html", "archive/minor-web-design-&-development/css-to-the-rescue/css-psuedo-selectoren.html", "archive/minor-web-design-&-development/web-app-from-scratch/web-app-from-scratch-kickoff.html", "archive/minor-web-design-&-development/web-app-from-scratch/pdca-plan-do-check-act-cycle.html", "archive/minor-web-design-&-development/web-app-from-scratch/breakdown-schets.html", "archive/kamer-opruimen.html", "daily/31-01-2023.html", "daily/14-02-2023.html", "daily/09-02-2023.html", "daily/07-02-2023.html", "daily/08-02-2023.html", "readwise-highlights/building-a-second-brain.html", "projects/minor-web-design-&-development/weekly-nerds/weekly-nerd-scaffolding-met-vite.html", "projects/minor-web-design-&-development/portfolio-project.html", "projects/antwerpen/planning-antwerpen.html", "areas/video-editing/handige-tools.html", "areas/video-editing/ai-videomaker-detail.co.html", "areas/note-taking/export-readwise-highlights-to-obsidian.html", "areas/note-taking/capturing.html", "areas/koken/eigen-gemaakte-bami.html", "areas/financiën/leningen.html", "areas/familie/cadeau-zoeken-voor-mama.html", "areas/artificial-intelligence/techtoucan.html", "areas/artificial-intelligence/chatgpt-generated-summarization-of-techtoucan-branding-strategy.html", "archive/droom-over-spongebob-app.html", "archive/minor-web-design-&-development/css-to-the-rescue/dynamic-css-secrets.html", "archive/minor-web-design-&-development/css-to-the-rescue/css-to-the-rescue.html", "archive/minor-web-design-&-development/css-to-the-rescue/css-to-the-rescue-eindopdracht.html", "archive/minor-web-design-&-development/web-app-from-scratch/serverless-functions.html", "archive/minor-web-design-&-development/web-app-from-scratch/tekenopdracht-kick-off.html", "archive/minor-web-design-&-development/web-app-from-scratch/refactor-design-code-logics.html", "archive/minor-web-design-&-development/web-app-from-scratch/lyriq.html", "archive/minor-web-design-&-development/web-app-from-scratch/event-loop.html", "daily/28-06-2023.html", "daily/30-03-2023.html", "daily/30-01-2023.html", "daily/25-04-2023.html", "daily/28-03-2023.html", "daily/28-02-2023.html", "daily/26-04-2023.html", "daily/24-02-2023.html", "daily/27-06-2023.html", "daily/26-06-2023.html", "daily/25-06-2023.html", "daily/22-03-2023.html", "daily/22-02-2023.html", "daily/24-06-2023.html", "daily/14-03-2023.html", "daily/19-06-2023.html", "daily/21-02-2023.html", "daily/16-02-2023.html", "daily/20-02-2023.html", "daily/09-03-2023.html", "daily/15-03-2023.html", "daily/11-05-2023.html", "daily/12-02-2023.html", "daily/11-02-2023.html", "daily/08-05-2023.html", "daily/10-02-2023.html", "daily/06-06-2023.html", "daily/07-06-2023.html", "daily/01-03-2023.html", "daily/05-04-2023.html", "daily/05-02-2023.html", "daily/04-02-2023.html", "weekly-nerd-project-fugu.html", "weekly-nerd-modal-mischief-&-dialog-dilemmas.html", "weekly-nerd-adapting-to-reality.html", "weekly-nerd-3d-&-three.js.html", "untitled.html", "untitled-1.html", "realtime-web-introductie.html", "real-time-web-eindopdracht.html", "real-time-web-data-driven-development.html", "readwise-highlights/digital-gardening-in-obsidian.html", "readwise-highlights/rust-–-what-made-it-“click”-for-me.html", "readwise-highlights/pseudo-classes.html", "readwise-highlights/opleiding-stoppen-nederlands.html", "readwise-highlights/one-reply-to-“deep-dive-into-the-css-where()-and-is()-functions”.html", "readwise-highlights/manage-accessible-design-system-themes-with-css-color-contrast()-—-smashing-magazine.html", "readwise-highlights/day-92-relative-color-syntax.html", "readwise-highlights/a-deep-dive-into-css-specificity.html", "readwise-highlights/day-92-relative-color-syntax-manuel-matuzović.html", "readwise-highlights/day-11-space-separated-functional-color-notations.html", "readwise-highlights/day-11-space-separated-functional-color-notations-manuel-matuzović.html", "readwise-highlights/creating-an-effective-case-study-12-important-tips-to-remember.html", "readwise-highlights/css-color-mix.html", "readwise-highlights/a-guide-to-modern-css-colors-with-rgb,-hsl,-hwb,-lab-and-lch.html", "questmate.html", "projects/project-2/prompt-engineering.html", "projects/project-2/introductie.html", "projects/ikbenmel.vin/eigen-website.html", "projects/ikbenmel.vin/inspiration.html", "projects/ikbenmel.vin/portfolio.html", "projects/mannen-met-plannen-review/2023-mannen-met-plannen-in-review.html", "projects/fitness/habits-template.html", "projects/fitness/chatgpt-conversation-about-fitness-goals.html", "projects/minor-web-design-&-development/live-server.html", "projects/minor-web-design-&-development/weekly-nerds/weekly-nerd.html", "projects/a.i-gebruiken-met-javascript/de-idee.html", "pwa-service-workers-presentatie.html", "nxt-museum-verslag.html", "notulen-gesprek-met-klant-16-6-2023.html", "meesterproef-presentatie-door-robert.html", "meesterproef-gezamenlijk-procesboek.html", "meesterproef-individueel-procesboek.html", "local-a.i..html", "llama-prompt-engineering.html", "hva-selfsessies-1.html", "human-centered-design-week-2.html", "human-centered-design-exclusive-design.html", "human-centered-design-eindopdracht.html", "human-centered-design-eindopdracht-v2.html", "human-centered-design-wo-26-apr.html", "human-centered-design-introductie.html", "evenementen.html", "css-pre-day.html", "areas/web-development/retro-card.html", "areas/gezondheid/athletic-greens.html", "areas/vrienden/rianne-naar-crisiscentrum-brengen.html", "areas/vrienden/broodje-gekregen-van-danian.html", "areas/video-editing/zoom-to-breathing-in-video-editing.html", "areas/video-editing/hyper-edit-tiktok-videos.html", "areas/note-taking/formatting-tips-for-obsidian-notes.html", "areas/note-taking/building-a-second-brain-anekdote.html", "areas/note-taking/12-favoriete-problemen.html", "areas/feestjes/verknipt-easter-8-april.html", "areas/familie/melissa-ziekte.html", "areas/dhl/mevrouw-met-de-honden.html", "areas/artificial-intelligence/dall-e-generations.html", "areas/artificial-intelligence/chatgpt.html", "areas/artificial-intelligence/a.i-video-editing.html", "areas/artificial-intelligence/a.i-voice-cloning.html", "archive/rubik's-kubus-oplossen.html", "archive/verknipt-indoor-taets-4-februari.html", "archive/omne-trium-perfectum.html", "archive/sem-bezoeken-in-madrid/sem-bezoeken-madrid.html", "archive/progressive-web-apps/service-workers.html", "archive/progressive-web-apps/pwa-eindopdracht.html", "archive/browser-technologies/artikelen/everyone-has-javascript,-right?.html", "archive/browser-technologies/artikelen/is-progressive-enhancement-dead-yet?.html", "archive/browser-technologies/artikelen/the-unreasonable-effectiveness-of-simple-html.html", "archive/browser-technologies/eindopdracht-browser-technologies.html", "archive/browser-technologies/opdracht-1.html", "archive/kabeldiertjes.html", "archive/minor-web-design-&-development/css-to-the-rescue/gastcollege-killian.html", "archive/minor-web-design-&-development/css-to-the-rescue/state-management-zonder-javascript.html", "archive/minor-web-design-&-development/css-to-the-rescue/kennismakingsopdracht-presentatie.html", "archive/minor-web-design-&-development/css-to-the-rescue/the-dialog-element.html", "archive/minor-web-design-&-development/css-to-the-rescue/css-to-the-rescue-interactie.html", "archive/minor-web-design-&-development/css-to-the-rescue/css-to-the-rescue-presentaties.html", "archive/minor-web-design-&-development/css-to-the-rescue/css-native-nesting.html", "archive/minor-web-design-&-development/css-to-the-rescue/css-to-the-rescue-briefing-week-1.html", "archive/minor-web-design-&-development/css-to-the-rescue/css-slider-stylen.html", "archive/minor-web-design-&-development/css-to-the-rescue/css-3d.html", "archive/minor-web-design-&-development/css-to-the-rescue/css-color-module-level-5.html", "archive/minor-web-design-&-development/css-to-the-rescue/box-shadow-pixel-art.html", "archive/minor-web-design-&-development/web-app-from-scratch/webappfromscratch-week-4.html", "archive/minor-web-design-&-development/web-app-from-scratch/view-transitions-api.html", "archive/minor-web-design-&-development/web-app-from-scratch/js-documentation.html", "archive/minor-web-design-&-development/web-app-from-scratch/visitekaartjes-schetsen.html", "archive/minor-web-design-&-development/web-app-from-scratch/front-end-projecten-presenteren.html", "archive/minor-web-design-&-development/web-app-from-scratch/nerd-sessie.html", "archive/minor-web-design-&-development/web-app-from-scratch/opdracht-squadpagina.html", "archive/minor-web-design-&-development/web-app-from-scratch/hello-api-ui-stack.html"],
+      "linkSources": [21, 47, 6, 11, 51, 3, 3, 3, 3, 22, 2, 2, 2, 2, 42, 19, 35, 9, 1, 1, 1, 33, 18, 16, 14, 5, 5, 5, 5, 0, 0, 0, 0, 0, 0, 13, 13, 4, 4, 4, 4, 29, 30, 28, 8, 8, 8, 27, 7, 7, 7, 12, 12, 26],
+      "linkTargets": [21, 45, 6, 50, 11, 1, 2, 24, 48, 52, 22, 3, 49, 11, 43, 41, 36, 10, 23, 2, 46, 32, 18, 16, 34, 9, 15, 31, 44, 9, 15, 1, 10, 20, 38, 20, 10, 1, 23, 2, 24, 3, 6, 6, 14, 2, 17, 17, 25, 37, 19, 25, 39, 40]
+    };
+    let attractionForce = 1;
+    let linkLength = 10;
+    let repulsionForce = 150;
+    let centralForce = 3;
+    let edgePruning = 100;
+  </script>
+
+  <script type="module" src="lib/scripts/graph_view.js"></script>
+
+  <script src="lib/scripts/graph_wasm.js"></script>
+
+  <script src="lib/scripts/tinycolor.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js" integrity="sha512-Ch/O6kL8BqUwAfCF7Ie5SX1Hin+BJgYH4pNjRqXdTEqMsis1TUYg+j6nnI9uduPjGaj7DN4UKCZgpvoExt6dkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="lib/scripts/webpage.js"></script>
+
+</head>
+
+<body class="theme-dark mod-macos is-frameless is-hidden-frameless obsidian-app native-scrollbars show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:14px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+  <div class="webpage-container">
+    <div class="sidebar-left sidebar">
+      <div class="sidebar-content">
+        <div><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle">
+            <div class="toggle-background"></div>
+          </label></div>
+        <div class="tree-container file-tree mod-nav-indicator" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Melvin</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area"></div>
+        </div>
+      </div>
+    </div>
+    <div class="document-container">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" tabindex="-1" style="tab-size: 4;">
+        <style id="MJX-CHTML-styles"></style>
+        <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
+          <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
+          <div class="mod-header">
+            <div class="inline-title" contenteditable="true" spellcheck="true" autocapitalize="on" tabindex="-1" enterkeyhint="done">Meesterproef - Individueel Procesboek</div>
+          </div>
+          <div>
+            <h1 data-heading="Individueel Procesboek van Meesterproef" id="Individueel_Procesboek_van_Meesterproef">Individueel Procesboek van Meesterproef</h1>
+          </div>
+          <div>
+            <div data-callout-metadata="" data-callout-fold="" data-callout="important" class="callout">
+              <div class="callout-title">
+                <div class="callout-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-flame">
+                    <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z"></path>
+                  </svg></div>
+                <div class="callout-title-inner">Eerste week</div>
+              </div>
+              <div class="callout-content">
+                <p>De eerste week was ik niet aanwezig bij de meesterproef. Dit was in overleg met Robert en Sanne omdat Ik deze week in Frankrijk was voor l'Alpe d'HuZes om de l'Alpe d'Huez op te rennen om geld op te halen voor kankeronderzoek.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <h2 data-heading="Week 2" id="Week_2" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Week 2
+            </h2>
+          </div>
+          <div>
+            <p>Dit is de eerste week dat ik weer fysiek aanwezig ben. </p>
+          </div>
+          <div>
+            <h4 data-heading="Leerdoelen" id="Leerdoelen" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Leerdoelen
+            </h4>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Mijn leerdoel is om samen te werken in een design environment
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div>Een design leerdoel leren
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 data-heading="Maandag" id="Maandag" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Maandag
+            </h3>
+          </div>
+          <div>
+            <p>Vandaag hebben we vrijwel de hele dag online gewerkt omdat de treinen niet reden. Ik heb in samenspraak met m'n groepje de rol van "representative" op mij genomen en contact gezocht met Bart-Jan. Verder heb ik onderzocht hoe we het project samen kunnen managen en het in overleg het besluit genomen om, naast het raam, nog digitaal een product backlog bij te houden. Dit zodat we van elkaar de progressie beter kunnen bijhouden. Het is nou eenmaal niet duurzaam om alleen op school te werken. </p>
+          </div>
+          <div>
+            <h3 data-heading="Dinsdag" id="Dinsdag" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Dinsdag
+            </h3>
+          </div>
+          <div>
+            <p>Vandaag begon met een gesprek met Sanne. Over de voortgang van het project. Hierin hebben we besproken dat vooral Quenten het idee heeft dat ik vaak te laat ben; hier ga ik verandering in brengen. We hebben met ons team 3 afspraken gemaakt:</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">Respect voor elkaar (Kom niet telaat)</li>
+              <li data-line="1">Standup om 09:30 en om 16:00 (Onderhoud ritme)</li>
+              <li data-line="2">Weekly Fest (Heb plezier)</li>
+            </ol>
+          </div>
+          <div>
+            <p>Na het gesprek hebben we een eigen agile kanban bord gemaakt op het raam en een begin gemaakt van een backlog. Vervolgens hebben we een aantal taken verdeeld en zijn Quenten en ik begonnen aan het data model en de entiteiten:</p>
+          </div>
+          <div>
+            <p></p>
+            <div src="Diagram zonder titel.drawio.png" class="internal-embed media-embed image-embed is-loaded"><img src="attachments/diagram-zonder-titel.drawio.png"></div>
+            <p></p>
+          </div>
+          <div>
+            <h2 data-heading="Woensdag" id="Woensdag" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Woensdag
+            </h2>
+          </div>
+          <div>
+            <p>Vandaag heb ik mij verslapen voor de ochtend standup, wat ik zeer bespijt. Gelukkig bleek ik niet de enige te zijn en had iemand anders zich ook verslapen uit het groepje. We hebben daarom een "Wall of Cake" bedacht en aan de muur gehangen. Elke keer als iemand te laat is komt hier een streepje bij en bij 3 streepjes wordt het groepje getrakteerd op taart. </p>
+          </div>
+          <div>
+            <p>Daarna hebben we een kleine standup gedaan en zijn aan de slag gegaan.<br>
+            </p>
+            <div src="IMG_1431.jpg" class="internal-embed is-loaded file-embed mod-empty">"IMG_1431.jpg" is not created yet. Click to create.</div>
+            <p></p>
+          </div>
+          <div>
+            <p>Verder heb ik de dag besteed aan het verder leren van SvelteKit, omdat ik hier nog nooit eerder mee gewerkt heb en samen met TingTing het ontwerp verder uitgewerkt. We hebben ervoor gekozen om met medailles te werken. Deze kan je geven aan de top 3 winnaars. </p>
+          </div>
+          <div>
+            <p></p>
+            <div src="Scherm­afbeelding 2023-06-07 om 14.36.55.png" class="internal-embed media-embed image-embed is-loaded"><img src="attachments/scherm­afbeelding-2023-06-07-om-14.36.55.png"></div>
+            <p></p>
+          </div>
+          <div>
+            <p>En een profiel pagina ontworpen voor de challenge houder:</p>
+          </div>
+          <div>
+            <p></p>
+            <div src="Scherm­afbeelding 2023-06-07 om 15.45.26.png" class="internal-embed media-embed image-embed is-loaded"><img src="attachments/scherm­afbeelding-2023-06-07-om-15.45.26.png"></div>
+            <p></p>
+          </div>
+          <div>
+            <h4 data-heading="Gesprek met Justus" id="Gesprek_met_Justus" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Gesprek met Justus
+            </h4>
+          </div>
+          <div>
+            <p>In de middag heb ik nog een review gehad met Justus. Hierin heb ik m'n zorgen besproken dat ik niet het idee heb nog voldoende input te kunnen inbrengen om een voldoende te halen voor de meesterproef. Het doel van de meesterproef is om te laten zien wat je kunt én nog wat te leren. Het gebruik van SvelteKit is iets wat ik graag wil leren en binnen een groepje kan daar ruimte voor zijn. Maar individueel heb ik meer kans op een voldoende omdat ik dan meer input kan geven.</p>
+          </div>
+          <div>
+            <p>Justus gaf het advies om dit te bespreken met Sanne en te overwegen om individueel verder te gaan of goed met m'n groepje te bespreken hoe ik input kan inbrengen die mij ligt. </p>
+          </div>
+          <div>
+            <p>Daarna ben ik naar m'n groepje gegaan om te bespreken dat ik graag wat meer wil coderen. Hier zou ruimte voor zijn, maar we zijn überhaupt gewoon nog niet heel ver. De eerste week was voornamelijk verkennen en deze week gedeeltelijk design en een beetje code. </p>
+          </div>
+          <div>
+            <h2 data-heading="Week 3" id="Week_3" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Week 3
+            </h2>
+          </div>
+          <div>
+            <p>Deze week wil ik meer m'n best doen om mijzelf te betrekken bij het groepje. Ook wil ik:</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0">Nu echt Svelte gaan leren</li>
+              <li data-line="1">M'n kennis over Wireframes versterken</li>
+              <li data-line="2">om 09:15 aanwezig zijn (een kwartier van te voren)</li>
+            </ol>
+          </div>
+          <div>
+            <h3 data-heading="Maandag" id="Maandag" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Maandag
+            </h3>
+          </div>
+          <div>
+            <p></p>
+            <div src="IMG_1620.jpeg" class="internal-embed is-loaded file-embed mod-empty">"IMG_1620.jpeg" is not created yet. Click to create.</div>
+            <p></p>
+          </div>
+          <div>
+            <p>Vandaag hebben we een stand-up gehad geleid door Quenten, dit was erg interessant aangezien Quenten al ervaring heeft met het leiden van vergaderingen. We waren het er unaniem mee eens dat we een duidelijkere backlog nodig hebben dus zijn we dat gaan maken. We hebben eerst in vogelvlucht een aantal functies doorgenomen en zijn daarna verder gegaan met een story-based approach. Hieruit hebben we 3 schermen met componenten bedacht.</p>
+          </div>
+          <div>
+            <p></p>
+            <div src="IMG_1630.jpeg" class="internal-embed is-loaded file-embed mod-empty">"IMG_1630.jpeg" is not created yet. Click to create.</div>
+            <p></p>
+          </div>
+          <div>
+            <p>Die zijn we gaan uitwerken in wireframes. Tussentijds is Sanne bij ons aangeschoven voor de wekelijkse bespreking. </p>
+          </div>
+          <div>
+            <h3 data-heading="Dinsdag" id="Dinsdag" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Dinsdag
+            </h3>
+          </div>
+          <div>
+            <p>Vandaag zijn we verder gegaan met het uitwerken van de wireframes van gisteren en is er progressie gemaakt in de HI-FI designs. </p>
+          </div>
+          <div>
+            <p></p>
+            <div src="IMG_1640.jpeg" class="internal-embed is-loaded file-embed mod-empty">"IMG_1640.jpeg" is not created yet. Click to create.</div>
+            <p></p>
+          </div>
+          <div>
+            <p></p>
+            <div src="IMG_1639.jpeg" class="internal-embed is-loaded file-embed mod-empty">"IMG_1639.jpeg" is not created yet. Click to create.</div>
+            <p></p>
+          </div>
+          <div>
+            <p></p>
+            <div src="IMG_1636.jpeg" class="internal-embed is-loaded file-embed mod-empty">"IMG_1636.jpeg" is not created yet. Click to create.</div>
+            <p></p>
+          </div>
+          <div>
+            <p></p>
+            <div src="IMG_1638.jpeg" class="internal-embed is-loaded file-embed mod-empty">"IMG_1638.jpeg" is not created yet. Click to create.</div>
+            <p></p>
+          </div>
+          <div>
+            <p></p>
+            <div src="IMG_1632.jpeg" class="internal-embed is-loaded file-embed mod-empty">"IMG_1632.jpeg" is not created yet. Click to create.</div>
+            <p></p>
+          </div>
+          <div>
+            <p></p>
+            <div src="Scherm­afbeelding 2023-06-14 om 09.45.45.png" class="internal-embed media-embed image-embed is-loaded"><img src="attachments/scherm­afbeelding-2023-06-14-om-09.45.45.png"></div>
+            <p></p>
+          </div>
+          <div>
+            <p>Lekker productief dagje!</p>
+          </div>
+          <div>
+            <h3 data-heading="Woensdag" id="Woensdag" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Woensdag
+            </h3>
+          </div>
+          <div>
+            <p>Vandaag weer om 09:15 aangekomen, ons hele groepje is er. We hebben een korte stand-up gehouden met wat we vandaag gaan doen. Ik ga tot half 11 bezig houden met het Design Rationale en mijn persoonlijke procesboek. Quenten gaat verder werken in SvelteKit en Sundous samen met Ting bezig met HI-FI ontwerp. </p>
+          </div>
+          <div>
+            <p></p>
+            <div src="IMG_1646.jpg" class="internal-embed is-loaded file-embed mod-empty">"IMG_1646.jpg" is not created yet. Click to create.</div>
+            <p></p>
+          </div>
+          <div>
+            <p>In de middag ben ik het ontwerp gaan uitwerken met een component-based approach. </p>
+          </div>
+          <div>
+            <h2 data-heading="Donderdag" id="Donderdag" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Donderdag
+            </h2>
+          </div>
+          <div>
+            <p>Vandaag zijn we afgetrapt met een gesprek samen met Robert omdat er bij hem zorgen waren over de professionaliteit binnen de groep en de communicatie. We hebben naar hem geluisterd en genuanceerd maar zijn het ook zeker eens dat de interne communicatie beter kan en de externe communicatie professioneler.</p>
+          </div>
+          <div>
+            <p>Daarna zijn Ting en Sundous verder gegaan met het ontwerp en hebben we nog een design review gehad. Ik ben verder gegaan met de code. De challenges pagina is nu af:</p>
+          </div>
+          <div>
+            <p></p>
+            <div src="ezgif-2-159202ddc9.gif" class="internal-embed media-embed image-embed is-loaded"><img src="attachments/ezgif-2-159202ddc9.gif"></div>
+            <p></p>
+          </div>
+          <div>
+            <h2 data-heading="Vrijdag" id="Vrijdag" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Vrijdag
+            </h2>
+          </div>
+          <div>
+            <p>Vrijdag zijn we weer half 10 op school gekomen om het gesprek met Bart-Jan alvast voor te bereiden en verder te werken aan het project. Ik ben begonnen met een Button component die door de hele website gebruikt gaat worden.</p>
+          </div>
+          <div>
+            <p><strong>Notulen:</strong></p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Filteropties op de challenge deelnemers
+              </li>
+              <li data-line="1">
+                <div class="list-bullet"></div><a data-tooltip-position="top" aria-label="mailto:nauko@naukoleong.nl" rel="noopener" class="external-link" href="mailto:nauko@naukoleong.nl" target="_blank">nauko@naukoleong.nl</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 data-heading="Week 3" id="Week_3">Week 3</h1>
+          </div>
+          <div>
+            <h2 data-heading="Maandag" id="Maandag" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Maandag
+            </h2>
+          </div>
+          <div>
+            <p>Vandaag weer om 09:30 aanwezig, mijn niet-te-laat-kom-streak is momenteel 1,5 week! Daarna hebben we gewacht op de rest van de groep en zijn we een gesprek met Sanne gestart. Daarna hebben we de backlog aangevuld met nieuwe items:</p>
+          </div>
+          <div>
+            <ul class="contains-task-list has-list-bullet">
+              <li data-line="0" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="0" type="checkbox" class="task-list-item-checkbox">Percentages veranderen naar absolute getallen
+              </li>
+              <li data-line="1" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="1" type="checkbox" class="task-list-item-checkbox">Table view zichtbaar bij 11 challenges of meer anders card view
+              </li>
+              <li data-line="2" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="2" type="checkbox" class="task-list-item-checkbox">Technisch uitwerken van de view aanpas knop voor table of card
+              </li>
+              <li data-line="3" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="3" type="checkbox" class="task-list-item-checkbox">Differentiëren van state van beoordeling van deelnemers (rood of groen)
+              </li>
+              <li data-line="4" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="4" type="checkbox" class="task-list-item-checkbox">Bart-Jan informeren over beslissing om filter op land niet toe te passen;
+              </li>
+              <li data-line="5" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="5" type="checkbox" class="task-list-item-checkbox">Filters inbouwen op andere data.
+              </li>
+              <li data-line="6" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="6" type="checkbox" class="task-list-item-checkbox">Share Buttons weghalen in Challenge Dashboard
+              </li>
+              <li data-line="7" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="7" type="checkbox" class="task-list-item-checkbox">Hi-Fi uitwerken van de Challenge Aanmaak Pagina gebaseerd op de wireframe
+              </li>
+              <li data-line="8" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="8" type="checkbox" class="task-list-item-checkbox">Dashboard Detail Pagina uitwerken
+              </li>
+              <li data-line="9" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="9" type="checkbox" class="task-list-item-checkbox">Feedback Flow in code uitwerken
+              </li>
+              <li data-line="10" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="10" type="checkbox" class="task-list-item-checkbox">Button Component bouwen
+              </li>
+              <li data-line="11" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="11" type="checkbox" class="task-list-item-checkbox">User Card component bouwen
+              </li>
+              <li data-line="12" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="12" type="checkbox" class="task-list-item-checkbox">Diagrammen van Challenge Detail pagina Uitwerken
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Deze hebben we vervolgens op het raam geplakt en hebben we ze onderverdeeld. Ik ga de volgende punten doen:</p>
+          </div>
+          <div>
+            <ul class="contains-task-list has-list-bullet">
+              <li data-line="0" data-task="x" class="task-list-item is-checked">
+                <div class="list-bullet"></div><input data-line="0" checked="" type="checkbox" class="task-list-item-checkbox">Bart-Jan informeren over beslissing om filter op land niet toe te passen;&nbsp;
+              </li>
+              <li data-line="1" data-task="x" class="task-list-item is-checked">
+                <div class="list-bullet"></div><input data-line="1" checked="" type="checkbox" class="task-list-item-checkbox">Filters inbouwen op andere data.
+              </li>
+              <li data-line="2" data-task="x" class="task-list-item is-checked">
+                <div class="list-bullet"></div><input data-line="2" checked="" type="checkbox" class="task-list-item-checkbox">Hi-Fi uitwerken van de Challenge Aanmaak Pagina gebaseerd op de wireframe
+              </li>
+              <li data-line="3" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="3" type="checkbox" class="task-list-item-checkbox">Diagrammen van Challenge Detail pagina Uitwerken
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2 data-heading="Dinsdag" id="Dinsdag" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Dinsdag
+            </h2>
+          </div>
+          <div>
+            <p>Vandaag hebben we besloten om een dag thuis te werken. Via Discord hebben we contact gehouden omtrent de voortgang van de punten. Ik heb de filters gebouwd, met Bart-Jan gecommuniceerd en wat componenten herschreven zodat het beter samenwerkt.</p>
+          </div>
+          <div>
+            <h2 data-heading="Woensdag" id="Woensdag" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Woensdag
+            </h2>
+          </div>
+          <div>
+            <p>Vandaag zijn we begonnen met een stand-up om de backlog verder aan te vullen en zijn we daarna verder gegaan met de issues. Ik ben gaan ontwerpen om zo ook aan m'n leerdoelen van deze week te voldoen.</p>
+          </div>
+          <div>
+            <p><strong>Dit is het ontwerp geworden voor de Challenge Aanmaak pagina:</strong><br>
+            </p>
+            <div src="Scherm­afbeelding 2023-06-21 om 13.21.12.png" class="internal-embed media-embed image-embed is-loaded"><img src="attachments/scherm­afbeelding-2023-06-21-om-13.21.12.png"></div>
+            <p></p>
+          </div>
+          <div>
+            <p>Daarna een code review gehad met Justus: <em>Hoe zijn we op technisch vlak bezig, waar zijn we mee bezig en hoe verder.</em></p>
+          </div>
+          <div>
+            <ul class="has-list-bullet">
+              <li data-line="0">
+                <div class="list-bullet"></div>Planning Poker
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p>Morgenochtend samen gaan zitten om tot woensdag alle taken te verdelen en die punten toedienen aan de hand van Planning Poker. Alle punten boven X aantal (bijvoorbeeld 13) opdelen in subtaken. En vervolgens al deze taken prioriteren en verdelen. </p>
+          </div>
+          <div>
+            <h2 data-heading="Donderdag" id="Donderdag" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Donderdag
+            </h2>
+          </div>
+          <div>
+            <p>Quenten en ik hebben de hele ochtend een roadmap gemaakt.</p>
+          </div>
+          <div>
+            <p></p>
+            <div src="IMG_0027.jpeg" class="internal-embed is-loaded file-embed mod-empty">"IMG_0027.jpeg" is not created yet. Click to create.</div>
+            <p></p>
+          </div>
+          <div>
+            <p>Daarna zijn we hiermee verder gegaan. En een design review gehad met Koop:</p>
+          </div>
+          <div>
+            <pre><code>- Welkom gebruiker -&gt; profiel pagina
+
+- Altijd label gebruiken!!
+- CCA mac os
+
+- Vullen met verschillende plaatjes HET LATEN LEVEN
+- Percentage afronden
+- Verschillende states uitwerken
+</code><button class="copy-code-button">Copy</button></pre>
+          </div>
+          <div>
+            <p>Vertel waar de gebruiker naar toe gaat en waar de gebruiker op dit moment is</p>
+          </div>
+          <div>
+            <p>Sections uiteenzetten en labellen</p>
+          </div>
+          <div>
+            <h2 data-heading="Vrijdag" id="Vrijdag" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Vrijdag
+            </h2>
+          </div>
+          <div>
+            <p>Klantgesprek gehad met Bart-Jan op school</p>
+          </div>
+          <div>
+            <h2 data-heading="Maandag" id="Maandag" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Maandag
+            </h2>
+          </div>
+          <div>
+            <p>Vandaag zijn we begonnen met een gesprek met Sanne om de laatste week te bespreken. Daarna hebben we met het groepje de roadmap doorgenomen die we zaterdag hebben gemaakt en de taken verdeeld. Daarna ben ik begonnen met mijn taken:</p>
+          </div>
+          <div>
+            <ul class="contains-task-list has-list-bullet">
+              <li data-line="0" data-task="x" class="task-list-item is-checked">
+                <div class="list-bullet"></div><input data-line="0" checked="" type="checkbox" class="task-list-item-checkbox">Klikbaar maken van de challenges
+              </li>
+              <li data-line="1" data-task="x" class="task-list-item is-checked">
+                <div class="list-bullet"></div><input data-line="1" checked="" type="checkbox" class="task-list-item-checkbox">Labellen
+              </li>
+              <li data-line="2" data-task="x" class="task-list-item is-checked">
+                <div class="list-bullet"></div><input data-line="2" checked="" type="checkbox" class="task-list-item-checkbox">Create challenge Knop
+              </li>
+              <li data-line="3" data-task="x" class="task-list-item is-checked">
+                <div class="list-bullet"></div><input data-line="3" checked="" type="checkbox" class="task-list-item-checkbox">Diagrammen uitwerken
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h1 data-heading="Eind" id="Eind">Eind</h1>
+          </div>
+          <div>
+            <p>Vanwege wat we nog allemaal moesten doen deze laatste week heb ik het procesboek niet helemaal dagelijks meer bijgewerkt. Uiteindelijk heb ik qua code bijgesprongen waar het kon en heb ik de hele design rationale ontworpen en uitgeprint. Deze is te vinden op Behance: <a data-tooltip-position="top" aria-label="https://www.behance.net/gallery/174135233/CrowdStorming-Project-voor-The-Institute-of-Creativity" rel="noopener" class="external-link" href="https://www.behance.net/gallery/174135233/CrowdStorming-Project-voor-The-Institute-of-Creativity" target="_blank">behance.net/gallery/174135233/CrowdStorming-Project-voor-The-Institute-of-Creativity</a></p>
+          </div>
+          <div class="mod-footer">
+            <div class="embedded-backlinks" style="display: none;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="sidebar-right sidebar">
+      <div class="sidebar-content"><span class="sidebar-section-header">Interactive Graph</span>
+        <div class="graph-view-placeholder">
+          <div class="graph-view-container">
+            <div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-arrow-up-right">
+                <line x1="7" y1="17" x2="17" y2="7"></line>
+                <polyline points="7 7 17 7 17 17"></polyline>
+              </svg></div>
+            <canvas id="graph-canvas" width="512px" height="512px"></canvas>
+          </div>
+        </div>
+        <div class="tree-container outline-tree" data-depth="0">
+          <div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Individueel_Procesboek_van_Meesterproef"><span class="tree-item-title">Individueel Procesboek van Meesterproef</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#Week_2"><span class="tree-item-title">Week 2</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Leerdoelen"><span class="tree-item-title">Leerdoelen</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Maandag"><span class="tree-item-title">Maandag</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Dinsdag"><span class="tree-item-title">Dinsdag</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-heading mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#Woensdag"><span class="tree-item-title">Woensdag</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="4">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Gesprek_met_Justus"><span class="tree-item-title">Gesprek met Justus</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-heading mod-collapsible is-collapsed" data-depth="2">
+                  <div class="tree-item-contents">
+                    <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                        <path d="M3 8L12 17L21 8"></path>
+                      </svg></div><a class="tree-item-link" href="#Week_3"><span class="tree-item-title">Week 3</span></a>
+                  </div>
+                  <div class="tree-item-children">
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Maandag"><span class="tree-item-title">Maandag</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Dinsdag"><span class="tree-item-title">Dinsdag</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                    <div class="tree-item mod-tree-heading" data-depth="3">
+                      <div class="tree-item-contents"><a class="tree-item-link" href="#Woensdag"><span class="tree-item-title">Woensdag</span></a></div>
+                      <div class="tree-item-children"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Donderdag"><span class="tree-item-title">Donderdag</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Vrijdag"><span class="tree-item-title">Vrijdag</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Week_3"><span class="tree-item-title">Week 3</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Maandag"><span class="tree-item-title">Maandag</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Dinsdag"><span class="tree-item-title">Dinsdag</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Woensdag"><span class="tree-item-title">Woensdag</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Donderdag"><span class="tree-item-title">Donderdag</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Vrijdag"><span class="tree-item-title">Vrijdag</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Maandag"><span class="tree-item-title">Maandag</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#Eind"><span class="tree-item-title">Eind</span></a></div>
+              <div class="tree-item-children"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
